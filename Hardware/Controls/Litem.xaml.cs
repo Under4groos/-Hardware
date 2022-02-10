@@ -24,10 +24,11 @@ namespace Hardware.Controls
         {
             InitializeComponent();
         }
-        public void Set(string name , string value )
+        public void Set(string name , string value , string type )
         {
             Name.Content = name;
-            Value.Content = value;
+            Value.Content = $"Value: {value}";
+            Type.Content = $"Type: {type}";
         }
 
     }

@@ -15,11 +15,24 @@
             </StackPanel>
         </Grid>
         <Grid Margin="0,35,0,0">
-            <ListBox Style="{DynamicResource ListBoxStyle}" ItemContainerStyle="{DynamicResource _ListBoxItemStyle_hover}">
-                <Border Height="20" Background="Aqua"></Border>
-                <Border Height="20" Background="Aqua"></Border>
-                <Border Height="20" Background="Aqua"></Border>
+            <ComboBox Margin="5" x:Name="ComboBoxKeys" Style="{DynamicResource ComboBoxFlatStyle}" 
+                      VerticalAlignment="Top" Width="200" 
+                      HorizontalAlignment="Left" Height="25" SelectionChanged="ComboBoxKeys_SelectionChanged"/>
+
+            <ListBox x:Name="listboxitems" Margin="0,35,0,76" 
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                     ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                     Style="{DynamicResource ListBoxStyle}" 
+                     ItemContainerStyle="{DynamicResource _ListBoxItemStyle_hover}">
             </ListBox>
+            <Border BorderThickness="2,0,0,0" BorderBrush="#881798" Margin="5,0,5,5" VerticalAlignment="Bottom" Background="#4C000000">
+                <StackPanel x:Name="list_inf" Margin="5" >
+                    <Controls:LBorder x:Name="Name" Content="Addres" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                    <Controls:LBorder x:Name="Value" Content="Value: 64"  FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                    <Controls:LBorder x:Name="Type" Content="Type: string" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                </StackPanel>
+            </Border>
+
         </Grid>
         <Border x:Name="resizeborder" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="#02FFFFFF" Opacity="0.1"></Border>
 

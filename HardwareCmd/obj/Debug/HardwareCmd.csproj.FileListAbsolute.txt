@@ -11,3 +11,6 @@ C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.exe
 C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.pdb
 C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\System.CodeDom.dll
 C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\System.CodeDom.xml
+C:\Users\UnderKo\source\repos\Hardware\Compile\HardwareCmd.exe.config
+C:\Users\UnderKo\source\repos\Hardware\Compile\HardwareCmd.exe
+C:\Users\UnderKo\source\repos\Hardware\Compile\HardwareCmd.pdb

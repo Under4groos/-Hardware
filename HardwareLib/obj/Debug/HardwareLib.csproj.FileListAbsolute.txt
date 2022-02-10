@@ -3,3 +3,5 @@ C:\Users\UnderKo\source\repos\Hardware\HardwareLib\bin\Debug\HardwareLib.pdb
 C:\Users\UnderKo\source\repos\Hardware\HardwareLib\obj\Debug\HardwareLib.csproj.CoreCompileInputs.cache
 C:\Users\UnderKo\source\repos\Hardware\HardwareLib\obj\Debug\HardwareLib.dll
 C:\Users\UnderKo\source\repos\Hardware\HardwareLib\obj\Debug\HardwareLib.pdb
+C:\Users\UnderKo\source\repos\Hardware\Compile\HardwareLib.dll
+C:\Users\UnderKo\source\repos\Hardware\Compile\HardwareLib.pdb

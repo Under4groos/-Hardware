@@ -19,3 +19,7 @@ C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.exe
 C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.pdb
 C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Controls\Litem.g.cs
 C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Controls\Litem.baml
+C:\Users\UnderKo\source\repos\Hardware\Compile\Hardware.exe.config
+C:\Users\UnderKo\source\repos\Hardware\Compile\Hardware.exe
+C:\Users\UnderKo\source\repos\Hardware\Compile\Hardware.pdb
+C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.csproj.CopyComplete

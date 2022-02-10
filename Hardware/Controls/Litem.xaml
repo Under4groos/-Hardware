@@ -3,11 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Hardware.Controls"
+             xmlns:local="clr-namespace:Hardware.Controls" xmlns:sys="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d" 
              >
-    <StackPanel>
-        <local:LBorder x:Name="Name" Content="Addres" FontSize="20" LabelForeground ="White"  HorizontalAlignment="Left" />
-        <local:LBorder x:Name="Value" Content="Value: 64" Margin="20,0,0,0"  FontSize="20" LabelForeground ="White"  HorizontalAlignment="Left" />
-    </StackPanel>
+
+    <Grid>
+        <Border Background="#02FFFFFF" Opacity="0.1"></Border>
+        <StackPanel>
+
+            <local:LBorder x:Name="Name" Content="Addres" FontSize="16" LabelForeground ="#FF5AB5FF" HorizontalAlignment="Left" Background="#19FFFFFF" ></local:LBorder>
+            <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
+                <local:LBorder x:Name="Value" Content="Value: 64" Margin="5,0,0,0"  FontSize="16" LabelForeground ="White"  Background="#19FFFFFF" HorizontalAlignment="Left" ></local:LBorder>
+
+                <local:LBorder x:Name="Type" Content="Type: string" Margin="5,0,0,0"  FontSize="16" LabelForeground ="White"  Background="#19FFFFFF" HorizontalAlignment="Left" ></local:LBorder>
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </UserControl>
