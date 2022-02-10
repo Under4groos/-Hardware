@@ -55,6 +55,8 @@ namespace HardwareLib
                         string name_ = pdata.Name;
                         string value_ = string.Empty;
                         string type_value_ = string.Empty;
+
+
                         if (pdata.Value != null && pdata.Value.ToString() != string.Empty)
                         {
                             Type type_value = pdata.Value.GetType();

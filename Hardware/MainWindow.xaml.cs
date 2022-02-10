@@ -40,6 +40,18 @@ namespace Hardware
 
 
 
+
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("select * from Win32_Processor");
+                ManagementObjectCollection managements = searcher.Get();
+                foreach (ManagementObject item in managements)
+                {
+                    PropertyDataCollection pd = item.Properties;
+                    ManagementPath mp = item.Path;
+                }
+
+
+
+
                 foreach (HIKeys item in Enum.GetValues(typeof(HIKeys)))
                 {
                     LBorder lBorder = new LBorder()

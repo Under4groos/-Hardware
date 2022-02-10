@@ -14,18 +14,18 @@
                 <Controls:LBorder x:Name="bclose" Content="&#xE711;"  Style="{StaticResource CloseButtonStyleBorderHover}" LabelStyle="{StaticResource SegoeMDL2StyleLabelText}" Width="48"/>
             </StackPanel>
         </Grid>
-        <Grid Margin="0,35,0,0">
+        <Grid Margin="8,35,8,8">
             <ComboBox Margin="5" x:Name="ComboBoxKeys" Style="{DynamicResource ComboBoxFlatStyle}" 
                       VerticalAlignment="Top" Width="200" 
                       HorizontalAlignment="Left" Height="25" SelectionChanged="ComboBoxKeys_SelectionChanged"/>
 
-            <ListBox x:Name="listboxitems" Margin="0,35,0,76" 
+            <ListBox x:Name="listboxitems" Margin="0,35,0,0" 
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
                      ScrollViewer.VerticalScrollBarVisibility="Disabled"
                      Style="{DynamicResource ListBoxStyle}" 
                      ItemContainerStyle="{DynamicResource _ListBoxItemStyle_hover}">
             </ListBox>
-            <Border BorderThickness="2,0,0,0" BorderBrush="#881798" Margin="5,0,5,5" VerticalAlignment="Bottom" Background="#4C000000">
+            <Border BorderThickness="2,0,0,0" BorderBrush="#881798" Margin="5,0,5,5" VerticalAlignment="Bottom" Background="#E5212121" HorizontalAlignment="Right">
                 <Grid>
                     <StackPanel x:Name="list_inf" Margin="5" VerticalAlignment="Stretch" HorizontalAlignment="Left" >
                         <Controls:LBorder x:Name="Key" Content="Key:" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
@@ -33,7 +33,7 @@
                         <Controls:LBorder x:Name="Value" Content="Value: 64"  FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
                         <Controls:LBorder x:Name="Type" Content="Type: string" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
                     </StackPanel>
-                    <Controls:LBorder Content="To C# code" Style="{DynamicResource StyleBorderHover}" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="25"  Width="80" ></Controls:LBorder>
+                    <Controls:LBorder Visibility="Collapsed" Content="To C# code" Style="{DynamicResource StyleBorderHover}" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="25"  Width="80" ></Controls:LBorder>
 
                 </Grid>
             </Border>
