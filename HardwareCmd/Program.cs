@@ -16,16 +16,49 @@ namespace HardwareCmd
             main(args);
             Console.ReadLine();
         }
-
+        static MObjSearcher mObjSearcher = new MObjSearcher();
         static void main(string[] args)
         {
-            MObjSearcher mObjSearcher = new MObjSearcher();
-            mObjSearcher.Find(HIKeys.Win32_Processor);
-            mObjSearcher.GetInformations();
-            foreach (DMObject item in mObjSearcher.dMObjects)
+            if(args.Length == 0)
             {
-                Console.WriteLine(item);
+                while (true)
+                {
+
+                    string cmd_ = Console.ReadLine();
+
+                    switch (cmd_)
+                    {
+                        case "help":
+                            Console.WriteLine("get hikeys");
+                            Console.WriteLine("get");
+                            Console.WriteLine("help me pls!");
+                            break;
+                        case "get hikeys":
+                            foreach (HIKeys item in Enum.GetValues(typeof(HIKeys)))
+                            {
+                                Console.WriteLine(item);
+                            }
+                            break;
+                        case "get":
+                            Console.WriteLine("say HIKeys -> cmd:\"get hikeys\"");
+
+
+
+                            mObjSearcher.Find(Console.ReadLine());
+                            mObjSearcher.GetInformations();
+                            foreach (DMObject item in mObjSearcher.dMObjects)
+                            {
+                                Console.WriteLine(item);
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                
+                
             }
+            
             
         }
     }
