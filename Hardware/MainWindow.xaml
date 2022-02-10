@@ -14,8 +14,12 @@
                 <Controls:LBorder x:Name="bclose" Content="&#xE711;"  Style="{StaticResource CloseButtonStyleBorderHover}" LabelStyle="{StaticResource SegoeMDL2StyleLabelText}" Width="48"/>
             </StackPanel>
         </Grid>
-        <Grid>
-            
+        <Grid Margin="0,35,0,0">
+            <ListBox Style="{DynamicResource ListBoxStyle}" ItemContainerStyle="{DynamicResource _ListBoxItemStyle_hover}">
+                <Border Height="20" Background="Aqua"></Border>
+                <Border Height="20" Background="Aqua"></Border>
+                <Border Height="20" Background="Aqua"></Border>
+            </ListBox>
         </Grid>
         <Border x:Name="resizeborder" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="#02FFFFFF" Opacity="0.1"></Border>
 

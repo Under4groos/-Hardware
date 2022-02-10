@@ -24,11 +24,12 @@ public class WinResize
 
 
         threadTimer = new ThreadTimer(Wind);
-        threadTimer.TickTime = 10;
+        threadTimer.TickTime = 1;
         threadTimer.Tick += (i, d) =>
         {
-
-            if (isMouseDoun && WinApi.MouseKeyState(0x01) == true)
+            if (!Wind.IsActive)
+                isMouseDoun = false;
+            if (isMouseDoun  && WinApi.MouseKeyState(0x01) == true )
             {
                 WinApi.GetCursorPos(out poscur);
                 Width = resizeSize.Width - (last_poscur.X - poscur.X);
@@ -58,8 +59,8 @@ public class WinResize
 
     private void MouseHandlers(UIElement element)
     {
-        element.MouseLeftButtonDown += new MouseButtonEventHandler(element_MouseLeftButtonDown);
-        element.MouseLeftButtonUp += new MouseButtonEventHandler(element_MouseLeftButtonUp);
+        element.PreviewMouseLeftButtonDown += new MouseButtonEventHandler(element_MouseLeftButtonDown);
+        element.PreviewMouseLeftButtonUp += new MouseButtonEventHandler(element_MouseLeftButtonUp);
         element.MouseEnter += (sender, e) =>
         {
             Wind.Cursor = Cursors.SizeNWSE;
@@ -81,9 +82,11 @@ public class WinResize
 
     private void element_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
+
+        isMouseDoun = true;
         WinApi.GetCursorPos(out last_poscur);
         resizeSize = new Size(Wind.Width, Wind.Height);
-        isMouseDoun = true;
+        
     }
 
 

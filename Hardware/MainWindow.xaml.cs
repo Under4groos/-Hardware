@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -30,8 +31,7 @@ namespace Hardware
                 new WBControl(this, bclose, ACTIONS.CLOSE);
                 new WBControl(this, bmax, ACTIONS.SIZE_max);
                 new WBControl(this, bmin, ACTIONS.SIZE_min);
-                new WindowBlureffect(this, WindowBlureffect.AccentState.ACCENT_ENABLE_BLURBEHIND);
-
+                // new WindowBlureffect(this, WindowBlureffect.AccentState.ACCENT_ENABLE_BLURBEHIND);
             };
         }
     }

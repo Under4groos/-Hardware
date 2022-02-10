@@ -17,3 +17,5 @@ C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.csproj.Genera
 C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.csproj.CoreCompileInputs.cache
 C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.exe
 C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Hardware.pdb
+C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Controls\Litem.g.cs
+C:\Users\UnderKo\source\repos\Hardware\Hardware\obj\Debug\Controls\Litem.baml

@@ -1,0 +1,13 @@
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\HardwareCmd.exe.config
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\HardwareCmd.exe
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\HardwareCmd.pdb
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\HardwareLib.dll
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\HardwareLib.pdb
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.csproj.AssemblyReference.cache
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.csproj.SuggestedBindingRedirects.cache
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.csproj.CoreCompileInputs.cache
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.csproj.CopyComplete
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.exe
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\obj\Debug\HardwareCmd.pdb
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\System.CodeDom.dll
+C:\Users\UnderKo\source\repos\Hardware\HardwareCmd\bin\Debug\System.CodeDom.xml

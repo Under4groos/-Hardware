@@ -48,6 +48,17 @@ namespace Hardware.Controls
                 _label.FontSize = value;
             }
         }
+        public System.Windows.Media.Brush LabelForeground
+        {
+            get
+            {
+                return _label.Foreground;
+            }
+            set
+            {
+                _label.Foreground = value;
+            }
+        }
         public object Content
         {
             get

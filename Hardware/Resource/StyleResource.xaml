@@ -34,7 +34,11 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    
+    <Style x:Key="ListBoxStyle" TargetType="ListBox">
+        <Setter Property="Background"       Value="{x:Null}"/>
+        <Setter Property="BorderThickness"  Value="0"/>
+        <Setter Property="BorderBrush"      Value="{x:Null}"/>
+    </Style>
     <Style x:Key="_ListBoxItemStyle_hover" TargetType="ListBoxItem">
         <Setter Property="Template">
             <Setter.Value>
