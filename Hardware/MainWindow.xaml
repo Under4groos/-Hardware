@@ -26,11 +26,16 @@
                      ItemContainerStyle="{DynamicResource _ListBoxItemStyle_hover}">
             </ListBox>
             <Border BorderThickness="2,0,0,0" BorderBrush="#881798" Margin="5,0,5,5" VerticalAlignment="Bottom" Background="#4C000000">
-                <StackPanel x:Name="list_inf" Margin="5" >
-                    <Controls:LBorder x:Name="Name" Content="Addres" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
-                    <Controls:LBorder x:Name="Value" Content="Value: 64"  FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
-                    <Controls:LBorder x:Name="Type" Content="Type: string" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
-                </StackPanel>
+                <Grid>
+                    <StackPanel x:Name="list_inf" Margin="5" VerticalAlignment="Stretch" HorizontalAlignment="Left" >
+                        <Controls:LBorder x:Name="Key" Content="Key:" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                        <Controls:LBorder x:Name="Name" Content="Addres" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                        <Controls:LBorder x:Name="Value" Content="Value: 64"  FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                        <Controls:LBorder x:Name="Type" Content="Type: string" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Left" ></Controls:LBorder>
+                    </StackPanel>
+                    <Controls:LBorder Content="To C# code" Style="{DynamicResource StyleBorderHover}" FontSize="14" LabelForeground ="White"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="25"  Width="80" ></Controls:LBorder>
+
+                </Grid>
             </Border>
 
         </Grid>

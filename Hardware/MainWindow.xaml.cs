@@ -50,6 +50,8 @@ namespace Hardware
                     
                     ComboBoxKeys.Items.Add(lBorder);
                 }
+                //ComboBoxKeys.SelectedValue = 0;
+                //ComboBoxKeys_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
                 foreach (LBorder item in list_inf.Children)
                 {
@@ -61,11 +63,13 @@ namespace Hardware
                 
             };
         }
-        public void Set(string name, string value, string type)
+        public void Set(string name, string value, string type, string k = "")
         {
+
             Name.Content = name;
             Value.Content = $"{value}";
             Type.Content = $"{type}";
+            Key.Content = k;
         }
         private void ComboBoxKeys_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -83,7 +87,7 @@ namespace Hardware
                 litem.Set(item.Name, item.Value, item.Type);
                 litem.PreviewMouseLeftButtonDown += (oe, ee) =>
                 {
-                    this.Set(item.Name, item.Value, item.Type);
+                    this.Set(item.Name, item.Value, item.Type , item_name);
                      
                 };
                 listboxitems.Items.Add(litem);
